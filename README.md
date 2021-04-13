@@ -4,7 +4,7 @@
 
 <p>A escola que aceita participar deste programa, deve realizar um cadastro, preenchendo com os dados da escola, e após esse cadastro, nossa equipe entrará em contato com os mesmo.</p>
 
-<p>Nossa missão é ajudar os alunos mais necessitados, e promover uma competição igualitártia no ensino, promovendo um ensino justo, para os alunos de escola pública.</p>
+<p>Nossa missão é ajudar os alunos mais necessitados, e promover uma competição igualitária no ensino, promovendo um ensino justo, para os alunos de escola pública.</p>
 
 ## Aplicação 💾
 
