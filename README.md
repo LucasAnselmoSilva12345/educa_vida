@@ -1,6 +1,6 @@
 # EducaVida
 
-<p>A EducaVida é um programa para escolas públicas, onde contém um projeto chamado de Ensino+, onde as intenções são ajudar os alunos dessas escolas nas tarefas do dia da escola, além de os alunos para as situações do futuro, como as provas na propría escola, provas para escolas técnicas e provas de vestibulares, além de um auxilio profissional sobre plano de carreira, pós fim do ano escolar.</p>
+<p>A EducaVida é um programa para escolas públicas, onde contém um projeto chamado de Ensino+, onde as intenções são ajudar os alunos dessas escolas nas tarefas do dia da escola, além de ajudar os alunos para as situações do futuro, como as provas na própria escola, provas para escolas técnicas e provas de vestibulares, além de um auxilio profissional sobre plano de carreira, pós fim do ano escolar.</p>
 
 <p>A escola que aceita participar deste programa, deve realizar um cadastro, preenchendo com os dados da escola, e após esse cadastro, nossa equipe entrará em contato com os mesmo.</p>
 
