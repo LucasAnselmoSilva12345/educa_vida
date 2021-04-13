@@ -1,0 +1,21 @@
+{
+  "name": "educa_vida",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "db": "node src/database/db.js"
+  },
+  "version": "1.0.0",
+  "description": "Education for live",
+  "main": "src/server.js",
+  "keywords": [],
+  "author": "Lucas Anselmo Moraes Da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
