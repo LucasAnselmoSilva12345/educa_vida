@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/icon/icone_register.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/global/styleGlobal.css" />
+    <link rel="stylesheet" href="/css/global/template.css" />
+    <link rel="stylesheet" href="/css/global/modal.css" />
+    <link rel="stylesheet" href="/css/global/error.css" />
+    <link rel="stylesheet" href="/css/responsive/responsive.css" />
+    <title>Formulario - Educa+</title>
+  </head>
+  <body>
+    <div id="page-home">{% include "partials/page-header.html" %}</div>
+
+    <form action="/saveregister" method="POST">
+      <h1>Cadastrar escola</h1>
+
+      <fieldset>
+        <legend>
+          <h2>Dados da Institutição</h2>
+          <span>Preencha todos os campos</span>
+        </legend>
+        <div class="field">
+          <label for="name">Nome da Escola</label>
+          <input type="text" name="name" placeholder="Escola..." required />
+        </div>
+        <div class="field">
+          <label for="name">Imagem da Escola</label>
+          <input type="url" name="image" required placeholder="https://" />
+        </div>
+        <div class="field-group">
+          <div class="field">
+            <label for="address">Endereço</label>
+            <input type="text" name="address" placeholder="Rua..." required />
+          </div>
+          <div class="field">
+            <label for="address2">Número</label>
+            <input type="text" name="address2" placeholder="000" required />
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="field">
+            <label for="state">Estado</label>
+            <select name="uf" required>
+              <option value="">Selecione o Estado</option>
+            </select>
+            <input type="hidden" name="state" />
+          </div>
+          <div class="field">
+            <label for="city">Cidade</label>
+            <select name="city" disabled required>
+              <option value="">Selecione a Cidade</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>Qual ano sua escola aborda?</h2>
+          <span>Selecione de acordo com sua escola</span>
+        </legend>
+
+        <div class="items-grid">
+          <li data-id="Ensino Fundamental II">
+            <span>Ensino fundamental II</span>
+          </li>
+          <li data-id="Ensino Médio">
+            <span>Ensino médio</span>
+          </li>
+          <li data-id="Ensino Fundamenta e Ensino Médio">
+            <span
+              >Ensino fundamental II <br />&<br />
+              Ensino médio</span
+            >
+          </li>
+          <li data-id="Preparação vestibulares para Escolas técnicas">
+            <span>Preparação vestibulares para escolas técnicas</span>
+          </li>
+          <li data-id="Preparação vestibulares para Faculdades">
+            <span>Preparação vestibulares para faculdades</span>
+          </li>
+          <li data-id="Escola de Reforços escolares">
+            <span>Escola de reforços escolares</span>
+          </li>
+        </div>
+        <input type="hidden" name="items" />
+      </fieldset>
+
+      <button type="submit">Cadastrar escola</button>
+    </form>
+
+    {% if saved %} {% include "partials/saveregister.html" %} {% endif %} {% if
+    error %} {% include "partials/erroregister.html" %} {% endif %}
+
+    <script src="/scripts/api_ibge.js"></script>
+  </body>
+</html>
