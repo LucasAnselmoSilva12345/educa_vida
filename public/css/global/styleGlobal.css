@@ -1,0 +1,67 @@
+:root {
+  --white: #fff;
+  --background_header: #506ad4;
+  --yellow: #ffcb05;
+  --text_titles: #1c1f26;
+  --texts_paragraphs: #434343;
+  --back_button_green: #009459;
+  --back_button_green-hover: #47a88f;
+  --back_section: #fbfcfd;
+  --back_news: #f7f7f7;
+  --texts_h2: #24262d;
+  --texts_h3: #2f2f2f;
+  --texts_h4: #416db2;
+  --purple: #ae81ff;
+  --pink: #f9265e;
+  --blue_light: #66d9eb;
+  --btn_register: #197f80;
+  --color_input: #2c70ff;
+  --border: #2c70ff;
+  --tomato: #d47362;
+  --tan: #d8b486;
+  --green_water: #04a1a1;
+  --back_a_programa: #6495ed;
+  --back-a_patrocinadores: #03738c;
+  --bg_footer: #011724;
+  --black_222: #222;
+
+  /*TEMPLATES*/
+  --pink_a: #db0ad1;
+  --purple_text: #9244a5;
+  --text_template: #1f5172;
+  --purple_h3: #5e3686;
+  --orange_a: #ff665a;
+  --text_form_h1: #376289;
+  --text_form_h2: #506171;
+  --border_form: #4d87bd;
+  --label: #2c353e;
+  --border_item: #b6d6e8;
+  --border_selected: #4478a8;
+  --card_h1: #29397c;
+  --card_h3: #2c353e;
+  --card_h4: #0b1e22;
+  --card_h5: #6c6c80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.menu_nav .active {
+  color: var(--yellow);
+}
