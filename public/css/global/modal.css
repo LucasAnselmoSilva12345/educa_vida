@@ -1,0 +1,117 @@
+#modal {
+  background-color: #0e0a14ef;
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 400ms;
+}
+
+#modal.hide {
+  display: none;
+}
+
+#modal .content {
+  color: white;
+
+  width: 420px;
+}
+
+#modal .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -48px;
+}
+
+#modal .header a {
+  background-image: url('../../assets/x.svg');
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  font-size: 0.01px;
+
+  margin-top: 23px;
+
+  margin-left: 15px;
+
+  padding: 10px 10px;
+}
+
+#modal .header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+#modal form label {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.125rem;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#modal form .field {
+  display: flex;
+}
+
+#modal form input {
+  flex: 1;
+  background-color: transparent;
+
+  border: 2px solid #2c70ff;
+  border-radius: 8px;
+
+  padding: 16px 24px;
+  font-size: 1rem;
+  color: #6c6c80;
+}
+
+#modal form button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  background-color: transparent;
+  border: 2px solid #2fb85e;
+  background-color: #2fb85e;
+  border-radius: 8px;
+  transition: 400ms;
+}
+
+#modal form button h5 {
+  font-size: 1.25rem;
+  font-family: 'Lexend', sans-serif;
+  color: white;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+#modal form button:hover {
+  background-color: #25924b;
+}
+
+/*SAVE REGISTER*/
+#modal .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal .content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.625rem;
+  margin-top: 25px;
+}
