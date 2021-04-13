@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/icon/icone_register.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/global/styleGlobal.css" />
+    <link rel="stylesheet" href="/css/global/template.css" />
+    <link rel="stylesheet" href="/css/global/modal.css" />
+    <link rel="stylesheet" href="/css/responsive/responsive.css" />
+    <title>Inscrever Escola</title>
+  </head>
+  <body>
+    <div id="page-home">{% include "partials/page-header.html" %}</div>
+
+    <main>
+      <div class="row">
+        <div class="row_text">
+          <h1>Ensino<span>+</span></h1>
+          <h3>
+            Faça já a inscrição da sua escola <br />no nosso programa de ensino
+            !!
+          </h3>
+          <a href="#">Escolas já cadastradas</a>
+        </div>
+      </div>
+    </main>
+
+    {% include "partials/modal.html" %}
+
+    <script src="/scripts/home.js"></script>
+  </body>
+</html>
