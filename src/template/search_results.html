@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/icon/icone_register.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/global/styleGlobal.css" />
+    <link rel="stylesheet" href="/css/global/template.css" />
+    <link rel="stylesheet" href="/css/responsive/responsive.css" />
+    <title>Escolas Cadastradas</title>
+  </head>
+  <body>
+    <div id="page-home">{% include "partials/page-header.html" %}</div>
+
+    <div id="page-search-results">
+      <main>
+        {% if total > 0 %}
+        <h4><strong>{{total}} Escolas</strong> já cadastradas</h4>
+        <div class="cards">
+          {% for i in school %}
+          <div class="card">
+            <img src="{{i.image}}" alt="{{i.name}}" />
+            <h1>{{i.name}}</h1>
+
+            <h3>{{i.items}}</h3>
+
+            <h5>{{i.city}}, {{i.state}} <br /></h5>
+
+            <p>{{i.address}}, N° {{i.address2}}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+        {% else %}
+
+        <h4><strong>Nenhuma</strong> escola cadastrada nessa cidade</h4>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1549980384-d61217e50c4b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80"
+              alt="Escola não cadastrada"
+            />
+            <h3>
+              Que pena... <br />Aparentemente não tem nenhuma escola cadastrada
+              nessa cidade
+            </h3>
+
+            <a href="/home">Retorne para o campo de pesquisa novamente</a>
+          </div>
+        </div>
+        {% endif %}
+      </main>
+    </div>
+  </body>
+</html>
